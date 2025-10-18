@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TODO LIST</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container" role="main" aria-label="Todo list application">
+    <h1 class="title">TO-DO LIST</h1>
+    <div class="counts" aria-live="polite" aria-atomic="true">
+      <div id="pendingCount">Pending: 0</div>
+      <div id="doneCount">Done: 0</div>
+    </div>
+    <form id="todoForm" aria-label="Add new task form">
+      <input type="text" id="taskInput" placeholder="Add new task..." autocomplete="off" aria-required="true" />
+      <button type="submit" class="add-btn" aria-label="Add task button">Add</button>
+    </form>
+    <ul class="todo-list" id="taskList" aria-live="polite" aria-relevant="additions removals"></ul>
+  </div>
+</body>
+<script src="app.js"></script>
+</html>
